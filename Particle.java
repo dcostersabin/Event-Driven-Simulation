@@ -36,7 +36,6 @@ public class Particle {
     }
 
     public void draw() {
-
         StdDraw.setPenColor(new Color(r, g, b));
         StdDraw.filledCircle(rx, ry, radius);
     }
@@ -47,7 +46,6 @@ public class Particle {
 
 
     public double timeToHitHorizontalWall() {
-
         if (vy > 0) return (1.0 - ry - radius) / vy;
         else if (vy < 0) return (radius - ry) / vy;
         else return Double.POSITIVE_INFINITY;
@@ -72,7 +70,6 @@ public class Particle {
 
     public double timeToHit(Particle that) {
         if (this == that) return Double.POSITIVE_INFINITY;
-
         double dx = that.rx - this.rx;
         double dy = that.ry - this.ry;
         double dvx = that.vx - this.vx;

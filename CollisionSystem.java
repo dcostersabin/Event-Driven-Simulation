@@ -70,7 +70,7 @@ public class CollisionSystem {
     }
 
     public static void main(String[] args) {
-        Particle[] particles = new Particle[5];
+        Particle[] particles = new Particle[15];
         for (int i = 0; i < particles.length; i++) {
             particles[i] = new Particle();
         }
